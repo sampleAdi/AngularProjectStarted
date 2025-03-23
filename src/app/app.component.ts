@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']  // Optional if you want styles
 })
 export class AppComponent {
-  title = 'Hello from BridgeLabz';
+  message = 'Hello from BridgeLabz';
 }
