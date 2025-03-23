@@ -12,9 +12,19 @@ import { NgIf } from '@angular/common';
 export class AppComponent {
   title = 'Hello from BridgeLabz';
   userName: string = '';
+  errorMsg: string = '';
   logoUrl: string = 'https://www.bridgelabz.com/assets/images/BridgeLabz%20New%20Logo.svg';
 
   openBridgeLabz() {
     window.open('https://www.bridgelabz.com', '_blank');
+  }
+
+  validateUserName() {
+    const pattern = /^[A-Z][a-zA-Z]{2,}$/; // Starts with uppercase and min 3 characters
+    if (!pattern.test(this.userName)) {
+      this.errorMsg = 'Name is incorrect!';
+    } else {
+      this.errorMsg = '';
+    }
   }
 }

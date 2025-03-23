@@ -5,7 +5,10 @@
 <div style="text-align: center; margin-top: 50px;">
   <h1>Hello {{ userName }} from BridgeLabz</h1>
   <br /><br />
-  <input [(ngModel)]="userName" placeholder="Enter your name" />
+  <input [(ngModel)]="userName" placeholder="Enter your name" (input)="validateUserName()" />
+  <div *ngIf="errorMsg" style="color: red;">
+    {{ errorMsg }}
+  </div>
 </div>
 
 <div class="logo-container">
