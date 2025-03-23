@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Helloworld": {
+    "angularGettingStarted": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/helloworld",
+            "outputPath": "dist/angular-getting-started",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Helloworld:build:production"
+              "buildTarget": "angularGettingStarted:build:production"
             },
             "development": {
-              "buildTarget": "Helloworld:build:development"
+              "buildTarget": "angularGettingStarted:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -97,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "ae738022-428c-4c89-9853-739b884b31f3"
   }
 }

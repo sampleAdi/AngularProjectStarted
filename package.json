@@ -1,5 +1,5 @@
 {
-  "name": "helloworld",
+  "name": "angular-getting-started",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:Helloworld": "node dist/helloworld/server/server.mjs"
+    "serve:ssr:angularGettingStarted": "node dist/angular-getting-started/server/server.mjs"
   },
   "private": true,
   "dependencies": {
