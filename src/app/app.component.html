@@ -1,6 +1,13 @@
 <h1>{{ title }}</h1>
 
 <h1>Welcome to BridgeLabz</h1>
+
+<div style="text-align: center; margin-top: 50px;">
+  <h1>Hello {{ userName }} from BridgeLabz</h1>
+  <br /><br />
+  <input [(ngModel)]="userName" placeholder="Enter your name" />
+</div>
+
 <div class="logo-container">
   <img [src]="logoUrl" alt="BridgeLabz Logo" (click)="openBridgeLabz()" class="clickable-logo" />
 </div>
